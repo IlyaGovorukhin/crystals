@@ -1,0 +1,43 @@
+/* MIXINS */
+.inlineblock {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.block {
+  width: 501px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -350px 0 0 -250px;
+}
+.h1,
+#count {
+  text-align: center;
+}
+#wrepperCanvas {
+  height: 500px;
+  width: 509px;
+  background: #339966;
+}
+.success {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  display: inline !ie;
+  border: 0.5px solid #EEE8AA;
+}
